@@ -1,0 +1,12 @@
+C:\Users\Aprendiz\Documents\.net\EjerciciosWindows\bin\Debug\EjerciciosWindows.exe.config
+C:\Users\Aprendiz\Documents\.net\EjerciciosWindows\bin\Debug\EjerciciosWindows.exe
+C:\Users\Aprendiz\Documents\.net\EjerciciosWindows\bin\Debug\EjerciciosWindows.pdb
+C:\Users\Aprendiz\Documents\.net\EjerciciosWindows\obj\Debug\EjerciciosWindows.csproj.AssemblyReference.cache
+C:\Users\Aprendiz\Documents\.net\EjerciciosWindows\obj\Debug\EjerciciosWindows.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aprendiz\Documents\.net\EjerciciosWindows\obj\Debug\EjerciciosWindows.Form1.resources
+C:\Users\Aprendiz\Documents\.net\EjerciciosWindows\obj\Debug\EjerciciosWindows.Properties.Resources.resources
+C:\Users\Aprendiz\Documents\.net\EjerciciosWindows\obj\Debug\EjerciciosWindows.csproj.GenerateResource.cache
+C:\Users\Aprendiz\Documents\.net\EjerciciosWindows\obj\Debug\EjerciciosWindows.csproj.CoreCompileInputs.cache
+C:\Users\Aprendiz\Documents\.net\EjerciciosWindows\obj\Debug\EjerciciosWindows.exe
+C:\Users\Aprendiz\Documents\.net\EjerciciosWindows\obj\Debug\EjerciciosWindows.pdb
+C:\Users\Aprendiz\Documents\.net\EjerciciosWindows\obj\Debug\EjerciciosWindows.FormTienda.resources
