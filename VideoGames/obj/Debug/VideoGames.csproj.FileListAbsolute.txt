@@ -1,0 +1,11 @@
+C:\Users\Aprendiz\Documents\.net\VideoGames\bin\Debug\VideoGames.exe.config
+C:\Users\Aprendiz\Documents\.net\VideoGames\bin\Debug\VideoGames.exe
+C:\Users\Aprendiz\Documents\.net\VideoGames\bin\Debug\VideoGames.pdb
+C:\Users\Aprendiz\Documents\.net\VideoGames\obj\Debug\VideoGames.csproj.AssemblyReference.cache
+C:\Users\Aprendiz\Documents\.net\VideoGames\obj\Debug\VideoGames.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aprendiz\Documents\.net\VideoGames\obj\Debug\VideoGames.CellGames.resources
+C:\Users\Aprendiz\Documents\.net\VideoGames\obj\Debug\VideoGames.Properties.Resources.resources
+C:\Users\Aprendiz\Documents\.net\VideoGames\obj\Debug\VideoGames.csproj.GenerateResource.cache
+C:\Users\Aprendiz\Documents\.net\VideoGames\obj\Debug\VideoGames.csproj.CoreCompileInputs.cache
+C:\Users\Aprendiz\Documents\.net\VideoGames\obj\Debug\VideoGames.exe
+C:\Users\Aprendiz\Documents\.net\VideoGames\obj\Debug\VideoGames.pdb
