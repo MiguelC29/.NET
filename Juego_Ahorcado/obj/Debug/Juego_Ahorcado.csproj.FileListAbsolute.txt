@@ -1,0 +1,11 @@
+C:\Users\Aprendiz\Documents\.net\Juego_Ahorcado\bin\Debug\Juego_Ahorcado.exe.config
+C:\Users\Aprendiz\Documents\.net\Juego_Ahorcado\bin\Debug\Juego_Ahorcado.exe
+C:\Users\Aprendiz\Documents\.net\Juego_Ahorcado\bin\Debug\Juego_Ahorcado.pdb
+C:\Users\Aprendiz\Documents\.net\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.csproj.AssemblyReference.cache
+C:\Users\Aprendiz\Documents\.net\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aprendiz\Documents\.net\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.juego_ahorcado.resources
+C:\Users\Aprendiz\Documents\.net\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.Properties.Resources.resources
+C:\Users\Aprendiz\Documents\.net\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.csproj.GenerateResource.cache
+C:\Users\Aprendiz\Documents\.net\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.csproj.CoreCompileInputs.cache
+C:\Users\Aprendiz\Documents\.net\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.exe
+C:\Users\Aprendiz\Documents\.net\Juego_Ahorcado\obj\Debug\Juego_Ahorcado.pdb
