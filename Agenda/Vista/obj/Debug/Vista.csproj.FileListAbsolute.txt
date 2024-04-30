@@ -1,0 +1,14 @@
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\bin\Debug\Vista.exe.config
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\bin\Debug\Vista.exe
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\bin\Debug\Vista.pdb
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\bin\Debug\Modelo.dll
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\bin\Debug\Modelo.pdb
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\obj\Debug\Vista.csproj.AssemblyReference.cache
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\obj\Debug\Vista.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\obj\Debug\Vista.Form1.resources
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\obj\Debug\Vista.Properties.Resources.resources
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\obj\Debug\Vista.csproj.GenerateResource.cache
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\obj\Debug\Vista.csproj.CopyComplete
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\obj\Debug\Vista.exe
+C:\Users\Aprendiz\Documents\.net\Agenda\Vista\obj\Debug\Vista.pdb

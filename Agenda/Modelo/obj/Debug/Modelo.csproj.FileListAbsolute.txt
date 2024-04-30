@@ -1,0 +1,6 @@
+C:\Users\Aprendiz\Documents\.net\Agenda\Modelo\bin\Debug\Modelo.dll
+C:\Users\Aprendiz\Documents\.net\Agenda\Modelo\bin\Debug\Modelo.pdb
+C:\Users\Aprendiz\Documents\.net\Agenda\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+C:\Users\Aprendiz\Documents\.net\Agenda\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\Aprendiz\Documents\.net\Agenda\Modelo\obj\Debug\Modelo.dll
+C:\Users\Aprendiz\Documents\.net\Agenda\Modelo\obj\Debug\Modelo.pdb
