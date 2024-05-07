@@ -33,7 +33,7 @@ namespace SimuladorBancario
             List<ClsProyeccion> listaCuotas = new List<ClsProyeccion>();
             double auxSaldoFinal = 0;
 
-            for(int i = 0; i <= plazo; i++)
+            for(int i = 1; i <= plazo; i++)
             {
                 ClsProyeccion objProyeccion = new ClsProyeccion();
                 objProyeccion.mes = i;
