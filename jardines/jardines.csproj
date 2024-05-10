@@ -80,7 +80,7 @@
       <DependentUpon>jardinweb.aspx</DependentUpon>
     </Compile>
     <Compile Include="modelo\JardinDAO.cs" />
-    <Compile Include="modelo\ORM.designer.cs">
+    <Compile Include="ORM.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ORM.dbml</DependentUpon>
@@ -88,12 +88,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="modelo\ORM.dbml">
+    <Content Include="ORM.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>ORM.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
-    <None Include="modelo\ORM.dbml.layout">
+    <None Include="ORM.dbml.layout">
       <DependentUpon>ORM.dbml</DependentUpon>
     </None>
     <None Include="packages.config" />

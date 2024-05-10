@@ -8,8 +8,9 @@ namespace jardines.modelo
     public class JardinDAO
     {
 
-        ORMDataContext BD = new ORMDataContext();
-        
+        static string connectionString = "Data Source=PC-MIGUEL-C\\SQLEXPRESS;Initial Catalog=db_ICBF;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;";
+        ORMDataContext BD = new ORMDataContext(connectionString);
+
         public void registrar(Jardines jardin)
         {
             BD.Jardines.InsertOnSubmit(jardin);

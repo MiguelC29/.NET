@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace jardines.modelo
+namespace jardines
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -55,12 +55,6 @@ namespace jardines.modelo
     partial void UpdateNinos(Ninos instance);
     partial void DeleteNinos(Ninos instance);
     #endregion
-		
-		public ORMDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["db_ICBFConnectionString"].ConnectionString, mappingSource)
-		{
-			OnCreated();
-		}
 		
 		public ORMDataContext(string connection) : 
 				base(connection, mappingSource)

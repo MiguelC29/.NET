@@ -13,7 +13,6 @@ namespace jardines
         protected void Page_Load(object sender, EventArgs e)
         {
             cargarDatos();
-
         }
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
@@ -27,8 +26,8 @@ namespace jardines
 
             jardinDAO.registrar(jardin);
             cargarDatos();
-            PanelRegistro.Visible = false;
-            PanelConsulta.Visible = true;
+            visibilidadPaneles(false, true);
+            limpiarCampos();
         }
 
         public void cargarDatos()
@@ -40,14 +39,27 @@ namespace jardines
 
         protected void btnNuevo_Click(object sender, EventArgs e)
         {
-            PanelConsulta.Visible = false;
-            PanelRegistro.Visible = true;
+            visibilidadPaneles(true, false);
         }
 
         protected void btnVolver_Click(object sender, EventArgs e)
         {
-            PanelRegistro.Visible = false;
-            PanelConsulta.Visible = true;
+            visibilidadPaneles(false, true);
+            limpiarCampos();
+        }
+
+        public void visibilidadPaneles(bool panelRegistro, bool panelConsulta)
+        {
+            PanelRegistro.Visible = panelRegistro;
+            PanelConsulta.Visible = panelConsulta;
+        }
+
+        public void limpiarCampos()
+        {
+            txtIdJardin.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtDireccion.Text = string.Empty;
+            ddlEstado.SelectedIndex = 0;
         }
     }
 }

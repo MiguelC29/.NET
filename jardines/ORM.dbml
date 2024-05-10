@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_ICBF" Class="ORMDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=BOGAPRCSFFSD108\SQLEXPRESS;Initial Catalog=db_ICBF;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="db_ICBFConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Acudientes" Member="Acudientes">
     <Type Name="Acudientes">
       <Column Name="idAcudiente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
