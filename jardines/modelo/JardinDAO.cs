@@ -8,8 +8,9 @@ namespace jardines.modelo
     public class JardinDAO
     {
 
-        static string connectionString = "Data Source=PC-MIGUEL-C\\SQLEXPRESS;Initial Catalog=db_ICBF;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;";
-        ORMDataContext BD = new ORMDataContext(connectionString);
+        /*static string connectionString = "Data Source=PC-MIGUEL-C\\SQLEXPRESS;Initial Catalog=db_ICBF;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;";
+        ORMDataContext BD = new ORMDataContext(connectionString);*/
+        ORMDataContext BD = new ORMDataContext();
 
         public void registrar(Jardines jardin)
         {
@@ -20,6 +21,44 @@ namespace jardines.modelo
         public Object consultarTodos()
         {
             return from J in BD.Jardines select J;
+        }
+
+        public void eliminar(int idJardin)
+        {
+            Jardines jardineEliminar = consultarJardinId(idJardin);
+            BD.Jardines.DeleteOnSubmit(jardineEliminar);
+            BD.SubmitChanges();
+        }
+
+        public void editar(Jardines jardin)
+        {
+            Jardines jardinEditar = consultarJardinId(jardin.idJardin);
+            jardinEditar.nombre = jardin.nombre;
+            jardinEditar.direccion = jardin.direccion;
+            jardinEditar.estado = jardin.estado;
+            BD.SubmitChanges();
+        }
+
+        public Jardines consultarJardinId(int idJardin)
+        {
+            return (from J in BD.Jardines
+                    where J.idJardin == idJardin
+                    select J).FirstOrDefault();
+        }
+
+        public bool validarNombre(string nombre)
+        {
+            Jardines nombreJardin = (from J in BD.Jardines
+                          where J.nombre == nombre
+                          select J).FirstOrDefault();
+
+            if(nombreJardin != null)
+            {
+                return false;
+            } else
+            {
+                return true;
+            }
         }
     }
 }

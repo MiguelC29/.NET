@@ -12,10 +12,10 @@
     <form id="form1" runat="server">
         <div class="container mt-3">
             <asp:Panel ID="PanelRegistro" runat="server" Visible="False">
-                <h1>Registrar Jardin</h1>
+                <h1><asp:Label ID="lblTitulo" runat="server" Text=""></asp:Label></h1>
                 <div class="container">
                     <div class="row">
-                        <asp:Label ID="Label1" runat="server" Text="Id Jardin"></asp:Label>
+                        <asp:Label ID="lblIdJardin" runat="server" Text="Id Jardin"></asp:Label>
                         <asp:TextBox ID="txtIdJardin" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="row">
@@ -30,25 +30,33 @@
                         <asp:Label ID="Label4" runat="server" Text="Estado"></asp:Label>
                         <asp:DropDownList ID="ddlEstado" runat="server" CssClass="form-control">
                             <asp:ListItem>Aprobado</asp:ListItem>
-                            <asp:ListItem>En Trámite</asp:ListItem>
+                            <asp:ListItem>En Tramite</asp:ListItem>
                             <asp:ListItem>Negado</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                 </div>
+                <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
                 <div class="mt-2">
                     <asp:Button ID="btnRegistrar" runat="server" Text="Registrar" CssClass="btn btn-success" OnClick="btnRegistrar_Click" />
+                    <asp:Button ID="btnEditar" runat="server" Text="Editar" CssClass="btn btn-primary" OnClick="btnEditar_Click" Visible="False" />
                     <asp:Button ID="btnVolver" runat="server" Text="Volver" CssClass="btn btn-primary" OnClick="btnVolver_Click" />
                 </div>
             </asp:Panel>
             <asp:Panel ID="PanelConsulta" runat="server">
                 <h1>Lista de Jardines</h1>
                 <asp:Button ID="btnNuevo" runat="server" Text="Nuevo" CssClass="btn btn-success mb-2" OnClick="btnNuevo_Click" />
-                <asp:GridView ID="gdvJardines" runat="server" CssClass="table table-dark" AutoGenerateColumns="False">
+                <asp:GridView ID="gdvJardines" runat="server" CssClass="table table-dark" AutoGenerateColumns="False" OnRowCommand="gdvJardines_RowCommand">
                     <Columns>
-                        <asp:BoundField DataField="idJardin" HeaderText="ID" />
+                        <asp:BoundField DataField="idJardin" HeaderText="ID JARDIN" />
                         <asp:BoundField DataField="nombre" HeaderText="NOMBRE" />
                         <asp:BoundField DataField="direccion" HeaderText="DIRECCIÓN" />
                         <asp:BoundField DataField="estado" HeaderText="ESTADO" />
+                        <asp:TemplateField HeaderText="ACCIONES">
+                            <ItemTemplate>
+                                <asp:ImageButton ID="imgBtnEditar" runat="server" ImageUrl="~/img/edit.png" Width="25px" CommandName="Editar" />
+                                <asp:ImageButton ID="imgBtnEliminar" runat="server" ImageUrl="~/img/delete.png" Width="25px" CommandName="Eliminar" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
                     </Columns>
                 </asp:GridView>
             </asp:Panel>

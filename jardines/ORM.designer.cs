@@ -56,6 +56,12 @@ namespace jardines
     partial void DeleteNinos(Ninos instance);
     #endregion
 		
+		public ORMDataContext() : 
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["db_ICBFConnectionString"].ConnectionString, mappingSource)
+		{
+			OnCreated();
+		}
+		
 		public ORMDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
