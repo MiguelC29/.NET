@@ -49,13 +49,11 @@ namespace jardines
         protected void btnNuevo_Click(object sender, EventArgs e)
         {
             visibilidadPaneles(true, false);
-            btnRegistrar.Visible = true;
-            btnEditar.Visible = false;
+            visibilidadBotones(true, false);
             limpiarCampos();
-            lblIdJardin.Visible = false;
-            txtIdJardin.Visible = false;
-            lblMensaje.Text = "";
+            visibilidadIdJardin(false, false);
             lblTitulo.Text = "Registrar Jardín";
+            lblMensaje.Text = "";
         }
 
         protected void btnVolver_Click(object sender, EventArgs e)
@@ -68,6 +66,18 @@ namespace jardines
         {
             PanelRegistro.Visible = panelRegistro;
             PanelConsulta.Visible = panelConsulta;
+        }
+
+        public void visibilidadBotones(bool btn_Registrar, bool btn_Editar)
+        {
+            btnRegistrar.Visible = btn_Registrar;
+            btnEditar.Visible = btn_Editar;
+        }
+
+        public void visibilidadIdJardin(bool lbl_IdJardin, bool txt_IdJardin)
+        {
+            lblIdJardin.Visible = lbl_IdJardin;
+            txtIdJardin.Visible = txt_IdJardin;
         }
 
         public void limpiarCampos()
@@ -90,13 +100,10 @@ namespace jardines
                 cargarDatos();
             } else if(e.CommandName == "Editar")
             {
-                visibilidadPaneles(true, false);
-                btnRegistrar.Visible = false;
-                btnEditar.Visible = true;
-
                 txtIdJardin.ReadOnly = true;
-                lblIdJardin.Visible = true;
-                txtIdJardin.Visible = true;
+                visibilidadPaneles(true, false);
+                visibilidadBotones(false, true);
+                visibilidadIdJardin(true, true);
                 lblMensaje.Text = "";
                 lblTitulo.Text = "Editar Jardín";
 
