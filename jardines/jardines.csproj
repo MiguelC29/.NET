@@ -71,6 +71,7 @@
     <Content Include="img\delete.png" />
     <Content Include="img\edit.png" />
     <Content Include="jardinweb.aspx" />
+    <Content Include="ninioweb.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +83,14 @@
       <DependentUpon>jardinweb.aspx</DependentUpon>
     </Compile>
     <Compile Include="modelo\JardinDAO.cs" />
+    <Compile Include="modelo\NinioDAO.cs" />
+    <Compile Include="ninioweb.aspx.cs">
+      <DependentUpon>ninioweb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ninioweb.aspx.designer.cs">
+      <DependentUpon>ninioweb.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ORM.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

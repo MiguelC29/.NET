@@ -45,7 +45,7 @@
             <asp:Panel ID="PanelConsulta" runat="server">
                 <h1>Lista de Jardines</h1>
                 <asp:Button ID="btnNuevo" runat="server" Text="Nuevo" CssClass="btn btn-success mb-2" OnClick="btnNuevo_Click" />
-                <asp:GridView ID="gdvJardines" runat="server" CssClass="table table-dark" AutoGenerateColumns="False" OnRowCommand="gdvJardines_RowCommand">
+                <asp:GridView ID="gdvJardines" runat="server" CssClass="table table-secondary" AutoGenerateColumns="False" OnRowCommand="gdvJardines_RowCommand">
                     <Columns>
                         <asp:BoundField DataField="idJardin" HeaderText="ID JARDIN" />
                         <asp:BoundField DataField="nombre" HeaderText="NOMBRE" />
