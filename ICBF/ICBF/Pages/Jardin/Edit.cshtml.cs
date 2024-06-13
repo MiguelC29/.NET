@@ -18,10 +18,11 @@ namespace ICBF.Pages.Jardin
 
             try
             {
-                String connectionString = "Data Source=BOGAPRCSFFSD108\\SQLEXPRESS;Initial Catalog=db_ICBF;Integrated Security=True";
+                String connectionString = "Data Source=BOGAPRCSFFSD108\\SQLEXPRESS;Initial Catalog=ICBF;Integrated Security=True";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
+
                     String sql = "SELECT * FROM jardines WHERE idJardin = @id";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
@@ -60,10 +61,26 @@ namespace ICBF.Pages.Jardin
 
             try
             {
-                String connectionString = "Data Source=BOGAPRCSFFSD108\\SQLEXPRESS;Initial Catalog=db_ICBF;Integrated Security=True";
+                String connectionString = "Data Source=BOGAPRCSFFSD108\\SQLEXPRESS;Initial Catalog=ICBF;Integrated Security=True";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
+
+                    String sqlExists = "SELECT COUNT(*) FROM jardines WHERE nombre = @nombreJardin";
+                    using (SqlCommand commandCheck = new SqlCommand(sqlExists, connection))
+                    {
+                        commandCheck.Parameters.AddWithValue("@nombreJardin", jardinInfo.nombre);
+
+                        int count = (int)commandCheck.ExecuteScalar();
+
+                        if (count > 0)
+                        {
+                            errorMessage = "El Jardín '" + jardinInfo.nombre + "' ya existe. Verifique la información e intente de nuevo.";
+                            return;
+                        }
+                    }
+
+                    // Espacio para validar que el jadin no exista
                     String sqlUpdate = "UPDATE jardines SET nombre = @nombreJardin, direccion = @direccionJardin, estado = @estado WHERE idJardin = @id";
                     using (SqlCommand command = new SqlCommand(sqlUpdate, connection))
                     {

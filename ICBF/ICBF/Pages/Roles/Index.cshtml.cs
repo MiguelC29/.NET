@@ -2,22 +2,22 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Data.SqlClient;
 
-namespace ICBF.Pages.Jardin
+namespace ICBF.Pages.Roles
 {
     public class IndexModel : PageModel
     {
-        public List<JardinInfo> listJardin = new List<JardinInfo>();
-        
+        public List<RolInfo> listRol = new List<RolInfo>();
+
         public void OnGet()
         {
             try
             {
                 String connectionString = "Data Source=BOGAPRCSFFSD108\\SQLEXPRESS;Initial Catalog=ICBF;Integrated Security=True";
-                
+
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    String sqlSelect = "SELECT * FROM jardines";
+                    String sqlSelect = "SELECT * FROM Roles";
 
                     using (SqlCommand command = new SqlCommand(sqlSelect, connection))
                     {
@@ -28,33 +28,31 @@ namespace ICBF.Pages.Jardin
                             {
                                 while (reader.Read())
                                 {
-                                    JardinInfo jardinInfo = new JardinInfo();
-                                    jardinInfo.idJardin = reader.GetInt32(0).ToString();
-                                    jardinInfo.nombre = reader.GetString(1);
-                                    jardinInfo.direccion = reader.GetString(2);
-                                    jardinInfo.estado = reader.GetString(3);
+                                    RolInfo rolInfo = new RolInfo();
+                                    rolInfo.idRol = reader.GetInt32(0).ToString();
+                                    rolInfo.nombre = reader.GetString(1);
 
-                                    listJardin.Add(jardinInfo);
+                                    listRol.Add(rolInfo);
                                 }
-                            } else
+                            }
+                            else
                             {
                                 Console.WriteLine("No hay filas en el resultado");
                             }
                         }
                     }
                 }
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine("Exception: " + ex.ToString());
             }
         }
 
-        public class JardinInfo
+        public class RolInfo
         {
-            public string idJardin { get; set; }
+            public string idRol { get; set; }
             public string nombre { get; set; }
-            public string direccion { get; set; }
-            public string estado { get; set; }
 
         }
     }

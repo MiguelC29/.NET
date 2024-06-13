@@ -4,31 +4,32 @@
 @{
     try
     {
-        String id = Request.Query["id"];
+        String idRol = Request.Query["idRol"];
         String connectionString = "Data Source=BOGAPRCSFFSD108\\SQLEXPRESS;Initial Catalog=ICBF;Integrated Security=True";
 
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
             connection.Open();
-            String sqlDelete = "DELETE FROM jardines WHERE idJardin = @id";
+            String sqlDelete = "DELETE FROM Roles WHERE idRol = @idRol";
             using (SqlCommand command = new SqlCommand(sqlDelete, connection))
             {
-                command.Parameters.AddWithValue("@id", id);
+                command.Parameters.AddWithValue("@idRol", idRol);
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     if (reader.Read())
                     {
-                        command.Parameters.AddWithValue("@id", id);
+                        command.Parameters.AddWithValue("@idRol", idRol);
                         command.ExecuteNonQuery();
                     }
                 }
             }
-        }   
+        }
 
-    } catch(Exception ex)
+    }
+    catch (Exception ex)
     {
-        
+
     }
 
-    Response.Redirect("/Jardin/Index");
+    Response.Redirect("/Roles/Index");
 }
