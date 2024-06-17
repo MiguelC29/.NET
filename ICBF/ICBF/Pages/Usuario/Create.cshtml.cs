@@ -19,7 +19,8 @@ namespace ICBF.Pages.Usuario
         {
             try
             {
-                String connectionString = "Data Source=BOGAPRCSFFSD108\\SQLEXPRESS;Initial Catalog=db_ICBF;Integrated Security=True";
+                //String connectionString = "Data Source=BOGAPRCSFFSD108\\SQLEXPRESS;Initial Catalog=db_ICBF;Integrated Security=True";
+                String connectionString = "Data Source=PC-MIGUEL-C\\SQLEXPRESS;Initial Catalog=db_ICBF;Integrated Security=True;";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
@@ -130,12 +131,15 @@ namespace ICBF.Pages.Usuario
 
             try
             {
-                String connectionString = "Data Source=BOGAPRCSFFSD108\\SQLEXPRESS;Initial Catalog=db_ICBF;Integrated Security=True";
+                //String connectionString = "Data Source=BOGAPRCSFFSD108\\SQLEXPRESS;Initial Catalog=db_ICBF;Integrated Security=True";
+                String connectionString = "Data Source=PC-MIGUEL-C\\SQLEXPRESS;Initial Catalog=db_ICBF;Integrated Security=True;";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
 
-                    String sqlExists = "SELECT COUNT(*) FROM usuarios WHERE identificacion = @identificacion;";
+                    String sqlExists = "SELECT COUNT(*) FROM usuarios as u " +
+                        "INNER JOIN DatosBasicos as d ON u.idDatosBasicos = d.idDatosBasicos " +
+                        "WHERE d.identificacion = @identificacion;";
                     using (SqlCommand commandCheck = new SqlCommand(sqlExists, connection))
                     {
                         commandCheck.Parameters.AddWithValue("@identificacion", identificacion);

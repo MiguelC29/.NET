@@ -5,84 +5,87 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ICBF
 build_property.RootNamespace = ICBF
-build_property.ProjectDir = C:\Users\Aprendiz\Documents\.net\ICBF\ICBF\
+build_property.ProjectDir = C:\Users\migue\source\repos\.NET\ICBF\ICBF\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Aprendiz\Documents\.net\ICBF\ICBF
+build_property.MSBuildProjectDirectory = C:\Users\migue\source\repos\.NET\ICBF\ICBF
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Error.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Index.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Jardin/CrearJardin.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Jardin/CrearJardin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSmFyZGluXENyZWFySmFyZGluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Jardin/Delete.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Jardin/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSmFyZGluXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Jardin/Edit.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Jardin/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSmFyZGluXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Jardin/Index.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Jardin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSmFyZGluXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Privacy.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Roles/Create.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Roles/Delete.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Roles/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Roles/Edit.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Roles/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Roles/Index.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/TipoDocumento/Index.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/TipoDocumento/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlwb0RvY3VtZW50b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Usuario/Create.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Usuario/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Usuario/Index.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/_ViewImports.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/_ViewStart.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aprendiz/Documents/.net/ICBF/ICBF/Pages/Shared/_Layout.cshtml]
+[C:/Users/migue/source/repos/.NET/ICBF/ICBF/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1zghut8g2h
